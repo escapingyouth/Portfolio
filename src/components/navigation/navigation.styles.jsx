@@ -1,6 +1,16 @@
 import styled, { css } from 'styled-components';
 import { colors } from '../../_variables';
 
+export const Header = styled.header`
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 1.5em 2em;
+	border-bottom: 0.5px solid #1e2029;
+	background-color: ${colors.background};
+	backdrop-filter: blur(10px);
+`;
 export const LogoContainer = styled.a`
 	color: ${colors.light};
 `;
@@ -9,13 +19,16 @@ export const Hamburger = styled.div`
 	position: relative;
 	width: 3rem;
 	height: 3rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
+	display: none;
 	cursor: pointer;
 
-	${({ isActive }) => isActive && HamburgerActive};
+	@media only screen and (max-width: 50em) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		${({ isActive }) => isActive && HamburgerActive}
+	} ;
 `;
 
 export const HamburgerBar = styled.span`
@@ -59,22 +72,37 @@ const HamburgerActive = css`
 `;
 
 export const NavBar = styled.nav`
-	font-family: 'Space Mono', monospace;
-	background-color: ${colors.secondary};
-	backdrop-filter: blur(10px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2em 3em;
 `;
 
 export const NavMenu = styled.ul`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 2rem;
-`;
+	gap: 3rem;
 
+	@media only screen and (max-width: 50em) {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		transition: 0.2s ease-in;
+		height: 100vh;
+		width: min(75vw, 25rem);
+		background-color: ${colors.secondary};
+
+		/* box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.25); */
+		${({ isActive }) => isActive && NavMenuActive}
+	} ;
+`;
+const NavMenuActive = css`
+	right: 0;
+`;
 export const NavItem = styled.li`
 	cursor: pointer;
 `;
