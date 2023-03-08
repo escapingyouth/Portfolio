@@ -1,10 +1,14 @@
 import Header from '../header/Header';
+import About from '../about/About';
+
+import { MainContent } from './main.styles';
 
 const Main = () => {
 	return (
-		<main>
+		<MainContent>
 			<Header />
-		</main>
+			<About />
+		</MainContent>
 	);
 };
 

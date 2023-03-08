@@ -6,3 +6,8 @@ export const colors = {
 	light: '#ccd6f6',
 	lighter: '#a8b2d1'
 };
+
+export const margins = {
+	marginLarge: '10rem',
+	marginMedium: '3rem'
+};

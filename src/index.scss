@@ -17,6 +17,26 @@ body {
 	color: #ccd6f6;
 }
 
+::-webkit-scrollbar {
+	width: 8px;
+	background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #111111;
+	border-radius: 8px;
+}
+
+::-moz-scrollbar {
+	width: 8px;
+	background: #080808;
+}
+
+::-moz-scrollbar-thumb {
+	background: #111111;
+	border-radius: 8px;
+}
+
 ul {
 	list-style: none;
 }
@@ -26,5 +46,15 @@ a {
 }
 
 main {
-	padding: 12em 6em;
+	margin: 10rem 6rem;
+
+	@media screen and (max-width: 48em) {
+		margin: 10rem 3rem;
+	}
+	@media screen and (max-width: 26em) {
+		margin: 10rem 2rem;
+	}
+	@media screen and (max-width: 23em) {
+		margin: 10rem 1.5rem;
+	}
 }

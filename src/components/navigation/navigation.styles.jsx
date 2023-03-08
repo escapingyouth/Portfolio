@@ -7,10 +7,18 @@ export const Header = styled.header`
 	top: 0;
 	left: 0;
 	padding: 1.5em 2em;
-	border-bottom: 0.5px solid #1e2029;
-	background-color: ${colors.background};
+	background-color: rgba(0, 0, 0, 0.85);
+	/* box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7); */
 	backdrop-filter: blur(10px);
+	transition: transform 0.3s ease-in-out;
+	transform: translateY(${(props) => (props.visible ? '0' : '-100%')});
+	z-index: 100;
+
+	@media screen and (max-width: 23em) {
+		padding: 1em 1.5em;
+	}
 `;
+
 export const LogoContainer = styled.a`
 	color: ${colors.light};
 `;
@@ -27,7 +35,7 @@ export const Hamburger = styled.div`
 		justify-content: center;
 		align-items: center;
 
-		${({ isActive }) => isActive && HamburgerActive}
+		${({ menuOpen }) => menuOpen && HamburgerActive}
 	} ;
 `;
 
@@ -48,9 +56,11 @@ export const HamburgerBar = styled.span`
 		content: '';
 		transition: all 0.2s;
 	}
+
 	&::before {
 		top: 0.6rem;
 	}
+
 	&::after {
 		top: -0.6rem;
 	}
@@ -64,6 +74,7 @@ const HamburgerActive = css`
 			transform: rotate(135deg);
 			top: 0;
 		}
+
 		&::after {
 			transform: rotate(-135deg);
 			top: 0;
@@ -96,13 +107,14 @@ export const NavMenu = styled.ul`
 		width: min(75vw, 25rem);
 		background-color: ${colors.secondary};
 
-		/* box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.25); */
-		${({ isActive }) => isActive && NavMenuActive}
+		${({ menuOpen }) => menuOpen && NavMenuActive}
 	} ;
 `;
+
 const NavMenuActive = css`
 	right: 0;
 `;
+
 export const NavItem = styled.li`
 	cursor: pointer;
 `;

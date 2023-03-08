@@ -1,7 +1,7 @@
 // import Resume from '../../assets/CV.docx';
 import { ButtonTypeClasses } from '../button/Button';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import {
 	Header,
@@ -17,6 +17,21 @@ import {
 import Button from '../button/Button';
 
 const Navigation = () => {
+	const [prevScrollPos, setPrevScrollPos] = useState(0);
+	const [visible, setVisible] = useState(true);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollPos = window.pageYOffset;
+			setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+			setPrevScrollPos(currentScrollPos);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [prevScrollPos, visible]);
+
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	const toggleMenu = () => {
@@ -24,10 +39,10 @@ const Navigation = () => {
 	};
 
 	return (
-		<Header>
+		<Header visible={visible}>
 			<NavBar>
 				<LogoContainer>LOGO</LogoContainer>
-				<NavMenu isActive={menuOpen}>
+				<NavMenu menuOpen={menuOpen}>
 					<NavItem>
 						<NavLink>About</NavLink>
 					</NavItem>
@@ -55,7 +70,7 @@ const Navigation = () => {
 					</Button>
 				</NavMenu>
 
-				<Hamburger isActive={menuOpen} onClick={toggleMenu}>
+				<Hamburger menuOpen={menuOpen} onClick={toggleMenu}>
 					<HamburgerBar />
 				</Hamburger>
 			</NavBar>

@@ -11,10 +11,10 @@ const Header = () => {
 				<h2>Michael Appiah.</h2>
 				<h3>I code your dreams into reality.</h3>
 				<p>
-					I am a software engineer who builds user-friendly websites that put a
-					smile on your face and a 'wow' in your visitors' hearts. My coding
-					skills are sharp and my love for all things web development is
-					borderline obsessive. Let's create something amazing together!
+					I'm a <span>web developer</span> who crafts <span>user-friendly</span>{' '}
+					websites with a touch of <span>wow-factor</span>. My coding skills are
+					sharp and my passion for web development is borderline{' '}
+					<span>obsessive</span>. Let's build something amazing together!
 				</p>
 			</TextContainer>
 			<LinksContainer>
