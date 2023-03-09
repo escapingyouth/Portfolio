@@ -6,16 +6,17 @@ export const Header = styled.header`
 	width: 100%;
 	top: 0;
 	left: 0;
-	padding: 1.5em 2em;
 	background-color: rgba(0, 0, 0, 0.85);
-	/* box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7); */
+	box-shadow: 0 5px 30px -10px rgba(26, 29, 36, 0.7);
+	padding: 1.5em 2em;
 	backdrop-filter: blur(10px);
 	transition: transform 0.3s ease-in-out;
 	transform: translateY(${(props) => (props.visible ? '0' : '-100%')});
 	z-index: 100;
 
-	@media screen and (max-width: 23em) {
+	@media screen and (max-width: 50em) {
 		padding: 1em 1.5em;
+		transform: translateY(0);
 	}
 `;
 
@@ -103,8 +104,8 @@ export const NavMenu = styled.ul`
 		align-items: center;
 		gap: 3rem;
 		transition: 0.2s ease-in;
-		height: 100vh;
 		width: min(75vw, 25rem);
+		height: 100vh;
 		background-color: ${colors.secondary};
 
 		${({ menuOpen }) => menuOpen && NavMenuActive}
