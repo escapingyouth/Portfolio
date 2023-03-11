@@ -1,14 +1,20 @@
+import { useContext } from 'react';
+import { NavMenuContext } from '../../context/NavMenuContext';
+
 import Header from '../header/Header';
 import About from '../about/About';
+import Skills from '../skills/Skills';
 
-import { MainContent } from './main.styles';
+import { MainContainer } from './main.styles';
 
 const Main = () => {
+	const { isNavOpen } = useContext(NavMenuContext);
 	return (
-		<MainContent>
+		<MainContainer isNavOpen={isNavOpen}>
 			<Header />
 			<About />
-		</MainContent>
+			<Skills />
+		</MainContainer>
 	);
 };
 

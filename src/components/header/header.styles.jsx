@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../_variables';
+import { colors } from '../../utils/_variables';
 
 export const MainHeader = styled.header``;
 

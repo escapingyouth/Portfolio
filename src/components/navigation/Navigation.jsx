@@ -1,10 +1,11 @@
-// import Resume from '../../assets/CV.docx';
+import { useContext } from 'react';
+import { NavMenuContext } from '../../context/NavMenuContext';
+
+import { LogoIcon } from '../icons/icons.styles';
 import { ButtonTypeClasses } from '../button/Button';
 
-import { useState, useEffect } from 'react';
-
 import {
-	Header,
+	NavHeader,
 	LogoContainer,
 	NavBar,
 	NavMenu,
@@ -13,36 +14,18 @@ import {
 	Hamburger,
 	HamburgerBar
 } from './navigation.styles';
-
 import Button from '../button/Button';
 
 const Navigation = () => {
-	const [prevScrollPos, setPrevScrollPos] = useState(0);
-	const [visible, setVisible] = useState(true);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			const currentScrollPos = window.pageYOffset;
-			setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
-			setPrevScrollPos(currentScrollPos);
-		};
-
-		window.addEventListener('scroll', handleScroll);
-
-		return () => window.removeEventListener('scroll', handleScroll);
-	}, [prevScrollPos, visible]);
-
-	const [menuOpen, setMenuOpen] = useState(false);
-
-	const toggleMenu = () => {
-		setMenuOpen(!menuOpen);
-	};
+	const { isNavOpen, toggleNavMenu, visible } = useContext(NavMenuContext);
 
 	return (
-		<Header visible={visible}>
+		<NavHeader visible={visible}>
 			<NavBar>
-				<LogoContainer>LOGO</LogoContainer>
-				<NavMenu menuOpen={menuOpen}>
+				<LogoContainer>
+					<LogoIcon />
+				</LogoContainer>
+				<NavMenu isNavOpen={isNavOpen}>
 					<NavItem>
 						<NavLink>About</NavLink>
 					</NavItem>
@@ -70,11 +53,11 @@ const Navigation = () => {
 					</Button>
 				</NavMenu>
 
-				<Hamburger menuOpen={menuOpen} onClick={toggleMenu}>
+				<Hamburger isNavOpen={isNavOpen} onClick={toggleNavMenu}>
 					<HamburgerBar />
 				</Hamburger>
 			</NavBar>
-		</Header>
+		</NavHeader>
 	);
 };
 

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { colors } from '../../_variables';
+import { colors } from '../../utils/_variables';
 
-export const Header = styled.header`
+export const NavHeader = styled.header`
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -36,7 +36,7 @@ export const Hamburger = styled.div`
 		justify-content: center;
 		align-items: center;
 
-		${({ menuOpen }) => menuOpen && HamburgerActive}
+		${({ isNavOpen }) => isNavOpen && HamburgerActive}
 	} ;
 `;
 
@@ -108,7 +108,7 @@ export const NavMenu = styled.ul`
 		height: 100vh;
 		background-color: ${colors.secondary};
 
-		${({ menuOpen }) => menuOpen && NavMenuActive}
+		${({ isNavOpen }) => isNavOpen && NavMenuActive}
 	} ;
 `;
 

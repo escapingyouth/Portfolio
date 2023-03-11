@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 
+import { ReactComponent as Logo } from '../../assets/logo.svg';
+
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
-import { colors } from '../../_variables';
+import { colors } from '../../utils/_variables';
+
+export const LogoIcon = styled(Logo)`
+	cursor: pointer;
+`;
 
 export const GithubIcon = styled(FaGithub)`
 	color: ${colors.primary};

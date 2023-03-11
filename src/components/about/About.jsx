@@ -1,9 +1,12 @@
 import {
 	AboutSection,
-	SectionHeading,
 	AboutContainer,
-	AboutText
+	AboutText,
+	AboutImageContainer,
+	WrapperContainer,
+	Wrapper
 } from './about.styles';
+import { SectionHeading } from '../main/main.styles';
 
 const About = () => {
 	return (
@@ -35,6 +38,11 @@ const About = () => {
 						development.
 					</p>
 				</AboutText>
+				<WrapperContainer>
+					<Wrapper>
+						<AboutImageContainer></AboutImageContainer>
+					</Wrapper>
+				</WrapperContainer>
 			</AboutContainer>
 		</AboutSection>
 	);
