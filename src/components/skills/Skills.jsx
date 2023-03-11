@@ -1,4 +1,4 @@
-import { SkillsSection, SkillsText } from './skills.styles';
+import { SkillsContainer, SkillsSection, SkillsText } from './skills.styles';
 import { SectionHeading } from '../main/main.styles';
 
 const Skills = () => {
@@ -10,6 +10,7 @@ const Skills = () => {
 			<SkillsText>
 				<p>Here are the technologies and tools I'm proficient in</p>
 			</SkillsText>
+			<SkillsContainer></SkillsContainer>
 		</SkillsSection>
 	);
 };
