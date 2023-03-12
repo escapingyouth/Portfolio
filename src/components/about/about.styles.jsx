@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors, margins } from '../../utils/_variables';
 
-import aboutImage from '../../assets/about.jpeg';
+import aboutImage from '../../assets/about.jpg';
 
 export const AboutSection = styled.section`
 	margin: ${margins.marginLarge} 0;
@@ -53,6 +53,7 @@ export const WrapperContainer = styled.div`
 	}
 
 	@media screen and (max-width: 26em) {
+		width: 70%;
 		height: 13rem;
 	}
 
