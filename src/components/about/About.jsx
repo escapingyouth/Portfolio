@@ -3,16 +3,17 @@ import {
 	AboutContainer,
 	AboutText,
 	AboutImageContainer,
-	WrapperContainer,
 	Wrapper
 } from './about.styles';
 import { SectionHeading } from '../main/main.styles';
+
+import aboutImage from '../../assets/about.jpg';
 
 const About = () => {
 	return (
 		<AboutSection>
 			<SectionHeading>
-				<h1>About Me</h1>
+				<h4>About Me</h4>
 			</SectionHeading>
 			<AboutContainer>
 				<AboutText>
@@ -38,11 +39,12 @@ const About = () => {
 						development.
 					</p>
 				</AboutText>
-				<WrapperContainer>
-					<Wrapper>
-						<AboutImageContainer></AboutImageContainer>
-					</Wrapper>
-				</WrapperContainer>
+
+				<Wrapper>
+					<AboutImageContainer>
+						<img src={aboutImage} alt='' />
+					</AboutImageContainer>
+				</Wrapper>
 			</AboutContainer>
 		</AboutSection>
 	);

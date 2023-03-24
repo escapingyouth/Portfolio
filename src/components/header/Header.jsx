@@ -1,7 +1,10 @@
 import { MainHeader, TextContainer, LinksContainer } from './header.styles';
-import { GithubIcon, LinkedInIcon, EmailIcon } from '../icons/icons.styles';
-import { ButtonTypeClasses } from '../button/Button';
-import Button from '../button/Button';
+
+import {
+	GithubLink,
+	EmailLink,
+	LinkedInLink
+} from '../icons/icon-container.styles';
 
 const Header = () => {
 	return (
@@ -18,33 +21,9 @@ const Header = () => {
 				</p>
 			</TextContainer>
 			<LinksContainer>
-				<Button
-					buttonType={ButtonTypeClasses.inverted}
-					href='https://github.com/escapingyouth'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					<GithubIcon />
-					<span>Github</span>
-				</Button>
-				<Button
-					buttonType={ButtonTypeClasses.inverted}
-					href='https://www.linkedin.com/in/michael-kwame-appiah/'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					<LinkedInIcon />
-					<span>LinkedIn</span>
-				</Button>
-				<Button
-					buttonType={ButtonTypeClasses.inverted}
-					href='mailto:@michael.k.a.amankwah@gmail.com'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					<EmailIcon />
-					<span>Email</span>
-				</Button>
+				<GithubLink />
+				<LinkedInLink />
+				<EmailLink />
 			</LinksContainer>
 		</MainHeader>
 	);

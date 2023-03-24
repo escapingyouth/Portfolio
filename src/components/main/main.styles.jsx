@@ -3,8 +3,11 @@ import styled, { css } from 'styled-components';
 import { colors, margins } from '../../utils/_variables';
 
 export const MainContainer = styled.main`
-	margin: 10rem 6rem;
+	margin: 10rem;
 
+	@media screen and (max-width: 64em) {
+		margin: 10rem 6rem;
+	}
 	@media screen and (max-width: 50em) {
 		${({ isNavOpen }) => isNavOpen && MainContainerActive};
 	}
@@ -31,7 +34,7 @@ const MainContainerActive = css`
 
 export const SectionHeading = styled.div`
 	margin-bottom: ${margins.marginMedium};
-	h1 {
+	h4 {
 		font-size: 1.5rem;
 		color: ${colors.light};
 		display: flex;
@@ -59,21 +62,21 @@ export const SectionHeading = styled.div`
 	}
 
 	@media screen and (max-width: 48em) {
-		h1 {
+		h4 {
 			&::after {
 				width: 65%;
 			}
 		}
 	}
 	@media screen and (max-width: 34em) {
-		h1 {
+		h4 {
 			&::after {
 				width: 45%;
 			}
 		}
 	}
 	@media screen and (max-width: 26em) {
-		h1 {
+		h4 {
 			&,
 			&::before {
 				font-size: 1.2rem;
@@ -81,7 +84,7 @@ export const SectionHeading = styled.div`
 		}
 	}
 	@media screen and (max-width: 24em) {
-		h1 {
+		h4 {
 			&,
 			&::before {
 				font-size: 1.2rem;
@@ -93,7 +96,7 @@ export const SectionHeading = styled.div`
 		}
 	}
 	@media screen and (max-width: 18em) {
-		h1 {
+		h4 {
 			&::after {
 				display: none;
 			}
