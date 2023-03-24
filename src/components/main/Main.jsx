@@ -1,11 +1,12 @@
 import { useContext } from 'react';
 import { NavMenuContext } from '../../context/NavMenuContext';
 
+import { MainContainer } from './main.styles';
+
 import Header from '../header/Header';
 import About from '../about/About';
 import Skills from '../skills/Skills';
-
-import { MainContainer } from './main.styles';
+import Journey from '../journey/Journey';
 
 const Main = () => {
 	const { isNavOpen } = useContext(NavMenuContext);
@@ -14,6 +15,7 @@ const Main = () => {
 			<Header />
 			<About />
 			<Skills />
+			<Journey />
 		</MainContainer>
 	);
 };

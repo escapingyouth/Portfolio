@@ -114,16 +114,13 @@ export const FirebaseIconContainer = styled.div`
 	color: #ff6d00;
 	border: 1px solid rgba(255, 111, 0, 0.16);
 `;
-export const GithubIconContainer = styled.div`
-	background-color: rgba(0, 0, 0, 0.16);
-	color: #000;
-	border: 1px solid rgba(255, 255, 255, 0.16);
-`;
+
 export const GitIconContainer = styled.div`
 	background-color: rgba(244, 81, 30, 0.16);
 	color: #f4511e;
 	border: 1px solid rgba(244, 81, 30, 0.16);
 `;
+
 export const PhotoshopIconContainer = styled.div`
 	background-color: rgba(3, 169, 244, 0.16);
 	color: #03a9f4;
@@ -134,6 +131,11 @@ export const IllustratorIconContainer = styled.div`
 	background-color: rgba(255, 87, 34, 0.16);
 	color: #ff5722;
 	border: 1px solid rgba(255, 87, 34, 0.16);
+`;
+
+export const FigmaIconContainer = styled.div`
+	background: linear-gradient(${colors.gradient});
+	color: #29b6f6;
 `;
 
 export const WordIconContainer = styled.div`
@@ -152,9 +154,4 @@ export const PowerpointIconContainer = styled.div`
 	background-color: rgba(230, 74, 25, 0.16);
 	color: #e64a19;
 	border: 1px solid rgba(230, 74, 25, 0.16);
-`;
-
-export const FigmaIconContainer = styled.div`
-	background: linear-gradient(${colors.gradient});
-	color: #29b6f6;
 `;

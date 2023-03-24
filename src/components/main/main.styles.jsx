@@ -65,6 +65,7 @@ export const SectionHeading = styled.div`
 		h4 {
 			&::after {
 				width: 65%;
+				margin-left: 1rem;
 			}
 		}
 	}
@@ -83,15 +84,15 @@ export const SectionHeading = styled.div`
 			}
 		}
 	}
-	@media screen and (max-width: 24em) {
+	@media screen and (max-width: 25em) {
 		h4 {
 			&,
 			&::before {
-				font-size: 1.2rem;
+				font-size: 1.1rem;
 			}
 
 			&::after {
-				width: 40%;
+				width: 30%;
 			}
 		}
 	}
