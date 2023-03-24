@@ -51,7 +51,7 @@ import {
 
 const Skills = () => {
 	return (
-		<SkillsSection>
+		<SkillsSection id='section-skills'>
 			<SectionHeading>
 				<h4>My Skills</h4>
 			</SectionHeading>

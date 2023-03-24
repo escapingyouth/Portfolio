@@ -11,7 +11,7 @@ import aboutImage from '../../assets/about.jpg';
 
 const About = () => {
 	return (
-		<AboutSection>
+		<AboutSection id='section-about'>
 			<SectionHeading>
 				<h4>About Me</h4>
 			</SectionHeading>

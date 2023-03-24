@@ -3,7 +3,7 @@ import { JourneySection } from './journey.styles';
 
 const Journey = () => {
 	return (
-		<JourneySection>
+		<JourneySection id='section-journey'>
 			<SectionHeading>
 				<h4>My Journey</h4>
 			</SectionHeading>

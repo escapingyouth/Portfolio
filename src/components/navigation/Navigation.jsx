@@ -22,23 +22,23 @@ const Navigation = () => {
 	return (
 		<NavHeader visible={visible}>
 			<NavBar>
-				<LogoContainer>
+				<LogoContainer href='/'>
 					<LogoIcon />
 				</LogoContainer>
 				<NavMenu isNavOpen={isNavOpen}>
-					<NavItem>
-						<NavLink>About</NavLink>
+					<NavItem onClick={toggleNavMenu}>
+						<NavLink href='/#section-about'>About</NavLink>
 					</NavItem>
-					<NavItem>
-						<NavLink>Skills</NavLink>
+					<NavItem onClick={toggleNavMenu}>
+						<NavLink href='/#section-skills'>Skills</NavLink>
 					</NavItem>
-					<NavItem>
-						<NavLink>Experience</NavLink>
+					<NavItem onClick={toggleNavMenu}>
+						<NavLink href='/#section-journey'>Experience</NavLink>
 					</NavItem>
-					<NavItem>
+					<NavItem onClick={toggleNavMenu}>
 						<NavLink>Portfolio</NavLink>
 					</NavItem>
-					<NavItem>
+					<NavItem onClick={toggleNavMenu}>
 						<NavLink>Contact</NavLink>
 					</NavItem>
 
