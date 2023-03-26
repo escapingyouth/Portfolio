@@ -13,7 +13,7 @@ export const MainContainer = styled.main`
 	}
 
 	@media screen and (max-width: 48em) {
-		margin: 10rem 3rem;
+		margin: 10rem ${margins.marginMedium};
 	}
 
 	@media screen and (max-width: 26em) {

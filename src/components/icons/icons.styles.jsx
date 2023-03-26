@@ -4,6 +4,8 @@ import { colors } from '../../utils/_variables';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { ReactComponent as Cpp } from '../../assets/cpp.svg';
+import { ReactComponent as Education } from '../../assets/education.svg';
+import { ReactComponent as Work } from '../../assets/work.svg';
 
 import {
 	FaGithub,
@@ -35,6 +37,8 @@ import {
 	SiMicrosoftexcel,
 	SiMicrosoftpowerpoint
 } from 'react-icons/si';
+
+import { BiCalendar } from 'react-icons/bi';
 
 export const LogoIcon = styled(Logo)`
 	cursor: pointer;
@@ -152,4 +156,17 @@ export const ExcelIcon = styled(SiMicrosoftexcel)`
 export const PowerpointIcon = styled(SiMicrosoftpowerpoint)`
 	color: #e64a19;
 	font-size: 1.4rem;
+`;
+
+export const EducationIcon = styled(Education)`
+	cursor: pointer;
+`;
+
+export const WorkIcon = styled(Work)`
+	cursor: pointer;
+`;
+
+export const CalendarIcon = styled(BiCalendar)`
+	font-size: 1rem;
+	color: ${colors.lighter};
 `;

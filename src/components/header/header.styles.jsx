@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { colors } from '../../utils/_variables';
+import { colors, margins } from '../../utils/_variables';
 
 export const MainHeader = styled.header``;
 
 export const TextContainer = styled.div`
-	margin-bottom: 3rem;
+	margin-bottom: ${margins.marginMedium};
 
 	h1 {
 		font-family: 'Space Mono', monospace;
