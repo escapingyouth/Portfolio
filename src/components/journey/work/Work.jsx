@@ -31,11 +31,11 @@ const Work = () => {
 					<JourneyRounder></JourneyRounder>
 				</JourneyDivider>
 				<div>
-					<h5>Software Engineering Intern</h5>
+					<h5>SWE Intern</h5>
 					<span>@Omni Strategies Ghana</span>
 					<JourneyCalendar>
 						<CalendarIcon />
-						<span>March 2020 - August 2020 </span>
+						<span>Mar - Aug 2020 </span>
 					</JourneyCalendar>
 				</div>
 			</JourneyData>

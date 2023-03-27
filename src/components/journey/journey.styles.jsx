@@ -20,6 +20,16 @@ export const JourneyHeader = styled.div`
 export const JourneyTabContainer = styled.div`
 	width: 50%;
 	margin-bottom: ${margins.marginMedium};
+
+	@media screen and (max-width: 64em) {
+		width: 70%;
+	}
+	@media screen and (max-width: 52em) {
+		width: 75%;
+	}
+	@media screen and (max-width: 34em) {
+		width: 100%;
+	}
 `;
 
 export const JourneyTabs = styled.div`
@@ -32,12 +42,11 @@ export const JourneyTabs = styled.div`
 export const JourneyTab = styled.div``;
 
 export const TabBar = styled.div`
+	position: relative;
 	width: 100%;
 	margin-top: 2rem;
 	height: 0.2rem;
 	background-color: #233554;
-
-	position: relative;
 
 	&::after {
 		content: '';
@@ -59,19 +68,31 @@ export const TabBar = styled.div`
 						left: 0;
 					}
 			  `};
+
+	@media screen and (max-width: 18em) {
+		height: 0.1rem;
+
+		&::after {
+			height: 0.1rem;
+		}
+	}
 `;
 
 export const JourneyContainer = styled.div`
 	display: grid;
 	grid-template-columns: 0.7fr;
 	justify-content: center;
-
 	margin-top: ${margins.marginMedium};
+
+	@media screen and (max-width: 64em) {
+		grid-template-columns: 0.9fr;
+	}
+	@media screen and (max-width: 34em) {
+		grid-template-columns: 1fr;
+	}
 `;
 
-export const JourneyDataContainer = styled.div`
-	display: block;
-`;
+export const JourneyDataContainer = styled.div``;
 
 export const JourneyData = styled.div`
 	display: grid;
@@ -87,6 +108,45 @@ export const JourneyData = styled.div`
 		font-size: 1.2rem;
 		color: ${colors.primary};
 	}
+
+	@media screen and (max-width: 34em) {
+		h5 {
+			font-size: 1.4rem;
+		}
+
+		span {
+			font-size: 1.1rem;
+		}
+	}
+	@media screen and (max-width: 26em) {
+		h5 {
+			font-size: 1.3rem;
+		}
+
+		span {
+			font-size: 0.9rem;
+		}
+	}
+	@media screen and (max-width: 25em) {
+		h5 {
+			font-size: 1.2rem;
+		}
+
+		span {
+			font-size: 0.8rem;
+		}
+	}
+	@media screen and (max-width: 18em) {
+		column-gap: 1rem;
+
+		h5 {
+			font-size: 1rem;
+		}
+
+		span {
+			font-size: 0.7rem;
+		}
+	}
 `;
 
 export const JourneyCalendar = styled.div`
@@ -99,6 +159,23 @@ export const JourneyCalendar = styled.div`
 		font-family: 'Space Mono', monospace;
 		font-size: 1rem;
 		color: ${colors.lighter};
+	}
+	@media screen and (max-width: 26em) {
+		span {
+			font-size: 0.8rem;
+		}
+	}
+	@media screen and (max-width: 24em) {
+		span {
+			font-size: 0.75rem;
+		}
+	}
+	@media screen and (max-width: 18em) {
+		gap: 0.1rem;
+
+		span {
+			font-size: 0.55rem;
+		}
 	}
 `;
 

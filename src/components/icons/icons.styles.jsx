@@ -160,13 +160,44 @@ export const PowerpointIcon = styled(SiMicrosoftpowerpoint)`
 
 export const EducationIcon = styled(Education)`
 	cursor: pointer;
+
+	@media screen and (max-width: 34em) {
+		width: 4rem;
+		height: 4rem;
+	}
+	@media screen and (max-width: 26em) {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	@media screen and (max-width: 18em) {
+		width: 2rem;
+		height: 2rem;
+	}
 `;
 
 export const WorkIcon = styled(Work)`
 	cursor: pointer;
+
+	@media screen and (max-width: 34em) {
+		width: 4rem;
+		height: 4rem;
+	}
+	@media screen and (max-width: 26em) {
+		width: 3rem;
+		height: 3rem;
+	}
+	@media screen and (max-width: 18em) {
+		width: 2rem;
+		height: 2rem;
+	}
 `;
 
 export const CalendarIcon = styled(BiCalendar)`
 	font-size: 1rem;
 	color: ${colors.lighter};
+
+	@media screen and (max-width: 18em) {
+		font-size: 0.8rem;
+	}
 `;

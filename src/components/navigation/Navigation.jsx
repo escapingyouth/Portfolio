@@ -36,7 +36,7 @@ const Navigation = () => {
 						<NavLink href='/#section-journey'>Experience</NavLink>
 					</NavItem>
 					<NavItem onClick={toggleNavMenu}>
-						<NavLink>Portfolio</NavLink>
+						<NavLink href='/#section-portfolio'>Portfolio</NavLink>
 					</NavItem>
 					<NavItem onClick={toggleNavMenu}>
 						<NavLink>Contact</NavLink>
