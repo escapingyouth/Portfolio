@@ -54,7 +54,7 @@ export const SectionHeading = styled.div`
 			content: '';
 			position: relative;
 			display: block;
-			width: 30%;
+			width: 40%;
 			height: 0.5px;
 			background-color: #233554;
 			margin-left: 2rem;
@@ -81,6 +81,10 @@ export const SectionHeading = styled.div`
 			&,
 			&::before {
 				font-size: 1.2rem;
+			}
+
+			&::after {
+				width: 35%;
 			}
 		}
 	}

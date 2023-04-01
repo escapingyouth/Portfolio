@@ -155,3 +155,13 @@ export const PowerpointIconContainer = styled.div`
 	color: #e64a19;
 	border: 1px solid rgba(230, 74, 25, 0.16);
 `;
+
+export const StyledComponentsIconContainer = styled.div`
+	background-color: rgba(236, 77, 132, 0.16);
+	color: #ec4d84;
+	border: 1px solid rgba(236, 77, 132, 0.16);
+`;
+
+export const GithubLinkContainer = styled.a``;
+
+export const LinkIconContainer = styled.a``;
