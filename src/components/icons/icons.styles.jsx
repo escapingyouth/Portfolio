@@ -17,7 +17,7 @@ import {
 	FaFigma
 } from 'react-icons/fa';
 
-import { FiMail } from 'react-icons/fi';
+import { FiMail, FiFolder } from 'react-icons/fi';
 
 import {
 	DiJavascript1,
@@ -160,6 +160,8 @@ export const PowerpointIcon = styled(SiMicrosoftpowerpoint)`
 	font-size: 1.4rem;
 `;
 
+export const StyledComponentsIcon = styled(StyledComponents)``;
+
 export const EducationIcon = styled(Education)`
 	cursor: pointer;
 
@@ -167,6 +169,7 @@ export const EducationIcon = styled(Education)`
 		width: 4rem;
 		height: 4rem;
 	}
+
 	@media screen and (max-width: 26em) {
 		width: 3rem;
 		height: 3rem;
@@ -185,6 +188,7 @@ export const WorkIcon = styled(Work)`
 		width: 4rem;
 		height: 4rem;
 	}
+
 	@media screen and (max-width: 26em) {
 		width: 3rem;
 		height: 3rem;
@@ -212,9 +216,16 @@ export const LinkIcon = styled(BiLinkExternal)`
 		color: ${colors.primary};
 	}
 
-	@media screen and (max-width: 26em) {
+	@media screen and (max-width: 18em) {
 		font-size: 1rem;
 	}
 `;
 
-export const StyledComponentsIcon = styled(StyledComponents)``;
+export const FolderIcon = styled(FiFolder)`
+	color: ${colors.primary};
+	font-size: 2.5rem;
+
+	@media screen and (max-width: 18em) {
+		font-size: 2rem;
+	}
+`;

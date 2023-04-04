@@ -30,6 +30,18 @@ export const PortfolioContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	gap: 4rem;
+
+	@media screen and (max-width: 34em) {
+		h2 {
+			font-size: 1.3rem;
+		}
+	}
+
+	@media screen and (max-width: 18em) {
+		h2 {
+			font-size: 1rem;
+		}
+	}
 `;
 
 export const ProjectContainer = styled.article`
@@ -37,6 +49,7 @@ export const ProjectContainer = styled.article`
 	border: 1px solid #ffffff28;
 	border-radius: 4px;
 	overflow: hidden;
+	margin-bottom: 5rem;
 
 	@media screen and (max-width: 64em) {
 		width: 80%;
@@ -45,6 +58,7 @@ export const ProjectContainer = styled.article`
 	@media screen and (max-width: 57em) {
 		width: 90%;
 	}
+
 	@media screen and (max-width: 34em) {
 		width: 100%;
 	}
@@ -65,6 +79,7 @@ export const ProjectDetailsContainer = styled.div`
 	@media screen and (max-width: 34em) {
 		padding: 1em;
 	}
+
 	@media screen and (max-width: 18em) {
 		padding: 0.7em;
 	}
@@ -80,6 +95,7 @@ export const ProjectHeader = styled.div`
 			font-size: 1.2rem;
 		}
 	}
+
 	@media screen and (max-width: 18em) {
 		h3 {
 			font-size: 1rem;
@@ -97,11 +113,9 @@ export const ProjectLinkContainer = styled.div`
 			color: ${colors.primary};
 		}
 
-		@media screen and (max-width: 26em) {
-			font-size: 1rem;
-		}
 		@media screen and (max-width: 18em) {
 			margin-right: 0.2rem;
+			font-size: 1rem;
 		}
 	}
 `;
@@ -118,6 +132,7 @@ export const ProjectIconsContainer = styled.div`
 	svg {
 		font-size: 0.9rem;
 	}
+
 	div {
 		display: flex;
 		align-items: center;
@@ -135,6 +150,7 @@ export const ProjectIconsContainer = styled.div`
 	@media screen and (max-width: 34em) {
 		gap: 0.5rem;
 	}
+
 	@media screen and (max-width: 26em) {
 		margin: 1.2rem 0;
 		padding-bottom: 0.5em;
@@ -145,6 +161,7 @@ export const ProjectIconsContainer = styled.div`
 			padding: 0.3em;
 		}
 	}
+
 	@media screen and (max-width: 18em) {
 		gap: 0.2rem;
 		padding-bottom: 0.5em;
@@ -170,15 +187,89 @@ export const ProjectDescription = styled.div`
 		text-align: justify;
 		line-height: 1.6;
 	}
+
 	@media screen and (max-width: 26em) {
 		p {
 			font-size: 0.8rem;
 			line-height: 1.3;
 		}
 	}
+
 	@media screen and (max-width: 18em) {
 		p {
 			font-size: 0.6rem;
+		}
+	}
+`;
+
+export const ProjectCardContainer = styled.div`
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4rem;
+	width: 80%;
+
+	@media screen and (max-width: 64em) {
+		width: 100%;
+		gap: 2rem;
+	}
+
+	@media screen and (max-width: 34em) {
+		grid-template-columns: 1fr;
+		width: 90%;
+	}
+
+	@media screen and (max-width: 26em) {
+		width: 100%;
+	}
+`;
+
+export const ProjectCard = styled.article`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2em;
+	background-color: ${colors.secondary};
+
+	${ProjectIconsContainer} {
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	@media screen and (max-width: 18em) {
+		padding: 1.7em;
+
+		${ProjectIconsContainer} {
+			gap: 0.5rem;
+		}
+	}
+`;
+
+export const ProjectCardText = styled.div`
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+
+	h3 {
+		margin-bottom: 1rem;
+	}
+
+	p {
+		color: ${colors.lighter};
+		font-size: 0.8rem;
+		text-align: justify;
+		line-height: 1.8;
+	}
+
+	@media screen and (max-width: 18em) {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+
+		h3 {
+			font-size: 1rem;
+		}
+
+		p {
+			font-size: 0.7rem;
 		}
 	}
 `;

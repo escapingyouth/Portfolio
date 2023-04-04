@@ -9,7 +9,10 @@ import {
 	ProjectHeader,
 	ProjectLinkContainer,
 	ProjectIconsContainer,
-	ProjectDescription
+	ProjectDescription,
+	ProjectCardContainer,
+	ProjectCard,
+	ProjectCardText
 } from './portfolio.styles';
 
 import {
@@ -35,7 +38,8 @@ import {
 	SassIcon,
 	FirebaseIcon,
 	FigmaIcon,
-	StyledComponentsIcon
+	StyledComponentsIcon,
+	FolderIcon
 } from '../icons/icons.styles';
 
 import ecommerceImage from '../../assets/ecommerce-app.png';
@@ -105,8 +109,8 @@ const Portfolio = () => {
 						</ProjectIconsContainer>
 						<ProjectDescription>
 							<p>
-								A website where one can purchase various men's, women's, and
-								kids clothings and accessories
+								A React-based ecommerce website with responsive design and
+								user-friendly interface for easy browsing and purchasing.
 							</p>
 						</ProjectDescription>
 					</ProjectDetailsContainer>
@@ -151,8 +155,9 @@ const Portfolio = () => {
 						</ProjectIconsContainer>
 						<ProjectDescription>
 							<p>
-								A weather app that displays different weather variations in
-								cities all around the world
+								A weather app that uses the OpenWeather API to provide users
+								with up-to-date weather information based on their current
+								location.
 							</p>
 						</ProjectDescription>
 					</ProjectDetailsContainer>
@@ -197,13 +202,191 @@ const Portfolio = () => {
 						</ProjectIconsContainer>
 						<ProjectDescription>
 							<p>
-								A movie app I created to practice my knowledge of APIs using the
-								TMDB API
+								A movie app that leverages the TMDB API to provide users with an
+								extensive database of movies, allowing them to browse and search
+								for their favorite titles
 							</p>
 						</ProjectDescription>
 					</ProjectDetailsContainer>
 				</ProjectContainer>
 				<h2>Other Noteworthy Projects</h2>
+				<ProjectCardContainer>
+					<ProjectCard>
+						<ProjectHeader>
+							<FolderIcon></FolderIcon>
+							<ProjectLinkContainer>
+								<GithubLinkContainer
+									href='https://github.com/escapingyouth/netflix-clone'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<GithubIcon></GithubIcon>
+								</GithubLinkContainer>
+								<LinkIconContainer
+									href='https://netflix-gh.netlify.app/'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<LinkIcon></LinkIcon>
+								</LinkIconContainer>
+							</ProjectLinkContainer>
+						</ProjectHeader>
+						<ProjectCardText>
+							<h3>Netflix UI Clone</h3>
+							<p>
+								A clone of the user interface (UI) of the popular streaming
+								platform, Netflix. The UI was built using HTML,CSS and
+								JavaScript with the aim of reproducing the familiar look and
+								feel of the original platform.
+							</p>
+						</ProjectCardText>
+						<ProjectIconsContainer>
+							<HTMLIconContainer>
+								<HTMLIcon />
+								<span>HTML</span>
+							</HTMLIconContainer>
+							<CSSIconContainer>
+								<CSSIcon />
+								<span>CSS</span>
+							</CSSIconContainer>
+							<JSIconContainer>
+								<JSIcon />
+								<span>JavaScript</span>
+							</JSIconContainer>
+						</ProjectIconsContainer>
+					</ProjectCard>
+					<ProjectCard>
+						<ProjectHeader>
+							<FolderIcon></FolderIcon>
+							<ProjectLinkContainer>
+								<GithubLinkContainer
+									href='https://github.com/escapingyouth/microsoft-clone'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<GithubIcon></GithubIcon>
+								</GithubLinkContainer>
+								<LinkIconContainer
+									href='https://microsoft-ui-clone.netlify.app/'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<LinkIcon></LinkIcon>
+								</LinkIconContainer>
+							</ProjectLinkContainer>
+						</ProjectHeader>
+						<ProjectCardText>
+							<h3>Microsoft UI Clone</h3>
+							<p>
+								A clone of the UI of the Microsoft homepage. I worked on this to
+								improve my knowledge of flexbox and grid layout. I also worked
+								on this to learn how to implement slider components in websites
+							</p>
+						</ProjectCardText>
+						<ProjectIconsContainer>
+							<HTMLIconContainer>
+								<HTMLIcon />
+								<span>HTML</span>
+							</HTMLIconContainer>
+							<CSSIconContainer>
+								<CSSIcon />
+								<span>CSS</span>
+							</CSSIconContainer>
+							<JSIconContainer>
+								<JSIcon />
+								<span>JavaScript</span>
+							</JSIconContainer>
+						</ProjectIconsContainer>
+					</ProjectCard>
+					<ProjectCard>
+						<ProjectHeader>
+							<FolderIcon></FolderIcon>
+							<ProjectLinkContainer>
+								<GithubLinkContainer
+									href='https://github.com/escapingyouth/disneyPlus-clone'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<GithubIcon></GithubIcon>
+								</GithubLinkContainer>
+								<LinkIconContainer
+									href='https://disneyplus-homepage-clone.netlify.app/'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<LinkIcon></LinkIcon>
+								</LinkIconContainer>
+							</ProjectLinkContainer>
+						</ProjectHeader>
+						<ProjectCardText>
+							<h3>Disney Plus</h3>
+							<p>
+								A clone of the user interface (UI) of the popular streaming
+								platform, Disney Plus using HTML, CSS, and JavaScript. The use
+								of CSS flexbox and grid layouts allowed for the creation of a
+								responsive design that adapts to different screen sizes
+							</p>
+						</ProjectCardText>
+						<ProjectIconsContainer>
+							<HTMLIconContainer>
+								<HTMLIcon />
+								<span>HTML</span>
+							</HTMLIconContainer>
+							<CSSIconContainer>
+								<CSSIcon />
+								<span>CSS</span>
+							</CSSIconContainer>
+							<JSIconContainer>
+								<JSIcon />
+								<span>JavaScript</span>
+							</JSIconContainer>
+						</ProjectIconsContainer>
+					</ProjectCard>
+					<ProjectCard>
+						<ProjectHeader>
+							<FolderIcon></FolderIcon>
+							<ProjectLinkContainer>
+								<GithubLinkContainer
+									href='https://github.com/escapingyouth/apple-clone'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<GithubIcon></GithubIcon>
+								</GithubLinkContainer>
+								<LinkIconContainer
+									href='https://apple-homepage-ui-clone.netlify.app/'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<LinkIcon></LinkIcon>
+								</LinkIconContainer>
+							</ProjectLinkContainer>
+						</ProjectHeader>
+						<ProjectCardText>
+							<h3>Apple UI Clone</h3>
+							<p>
+								A clone of the user interface (UI) of the Apple website, built
+								using HTML, CSS, and JavaScript. I cloned this website because
+								of how aesthetically pleasing the UI looked and I wanted to
+								replicate just that.
+							</p>
+						</ProjectCardText>
+						<ProjectIconsContainer>
+							<HTMLIconContainer>
+								<HTMLIcon />
+								<span>HTML</span>
+							</HTMLIconContainer>
+							<CSSIconContainer>
+								<CSSIcon />
+								<span>CSS</span>
+							</CSSIconContainer>
+							<JSIconContainer>
+								<JSIcon />
+								<span>JavaScript</span>
+							</JSIconContainer>
+						</ProjectIconsContainer>
+					</ProjectCard>
+				</ProjectCardContainer>
 			</PortfolioContainer>
 		</PortfolioSection>
 	);
