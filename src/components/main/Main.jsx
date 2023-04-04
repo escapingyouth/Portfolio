@@ -8,6 +8,7 @@ import About from '../about/About';
 import Skills from '../skills/Skills';
 import Journey from '../journey/Journey';
 import Portfolio from '../portfolio/Portfolio';
+import Contact from '../contact/Contact';
 
 const Main = () => {
 	const { isNavOpen } = useContext(NavMenuContext);
@@ -18,6 +19,7 @@ const Main = () => {
 			<Skills />
 			<Journey />
 			<Portfolio />
+			<Contact />
 		</MainContainer>
 	);
 };

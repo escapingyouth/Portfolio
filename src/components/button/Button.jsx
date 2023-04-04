@@ -12,9 +12,7 @@ const getButton = (buttonType = ButtonTypeClasses.base) => {
 	}[buttonType];
 };
 
-const Button = ({ children, buttonType, ...otherProps }) => {
+export const Button = ({ children, buttonType, ...otherProps }) => {
 	const CustomButton = getButton(buttonType);
 	return <CustomButton {...otherProps}>{children}</CustomButton>;
 };
-
-export default Button;

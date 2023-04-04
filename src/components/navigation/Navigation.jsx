@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { NavMenuContext } from '../../context/NavMenuContext';
 
 import { LogoIcon } from '../icons/icons.styles';
-import { ButtonTypeClasses } from '../button/Button';
+import { Button, ButtonTypeClasses } from '../button/Button';
 
 import {
 	NavHeader,
@@ -14,7 +14,6 @@ import {
 	Hamburger,
 	HamburgerBar
 } from './navigation.styles';
-import Button from '../button/Button';
 
 const Navigation = () => {
 	const { isNavOpen, toggleNavMenu, visible } = useContext(NavMenuContext);
@@ -39,7 +38,7 @@ const Navigation = () => {
 						<NavLink href='/#section-portfolio'>Portfolio</NavLink>
 					</NavItem>
 					<NavItem onClick={toggleNavMenu}>
-						<NavLink>Contact</NavLink>
+						<NavLink href='/#section-contact'>Contact</NavLink>
 					</NavItem>
 
 					<Button
