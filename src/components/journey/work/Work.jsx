@@ -6,6 +6,7 @@ import {
 	JourneyRounder,
 	JourneyLine
 } from '../journey.styles';
+
 import { CalendarIcon } from '../../icons/icons.styles';
 
 const Work = () => {

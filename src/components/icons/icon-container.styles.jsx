@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { colors } from '../../utils/_variables';
 
 import { Button, ButtonTypeClasses } from '../button/Button';

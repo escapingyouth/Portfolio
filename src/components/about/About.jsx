@@ -5,6 +5,7 @@ import {
 	AboutImageContainer,
 	Wrapper
 } from './about.styles';
+
 import { SectionHeading } from '../main/main.styles';
 
 import aboutImage from '../../assets/about.jpg';

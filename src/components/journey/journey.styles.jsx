@@ -24,9 +24,11 @@ export const JourneyTabContainer = styled.div`
 	@media screen and (max-width: 64em) {
 		width: 70%;
 	}
+
 	@media screen and (max-width: 52em) {
 		width: 75%;
 	}
+
 	@media screen and (max-width: 34em) {
 		width: 100%;
 	}
@@ -87,6 +89,7 @@ export const JourneyContainer = styled.div`
 	@media screen and (max-width: 64em) {
 		grid-template-columns: 0.9fr;
 	}
+
 	@media screen and (max-width: 34em) {
 		grid-template-columns: 1fr;
 	}
@@ -98,11 +101,13 @@ export const JourneyData = styled.div`
 	display: grid;
 	grid-template-columns: 1fr max-content 1fr;
 	column-gap: 1.5rem;
+
 	h5 {
 		font-weight: bold;
 		font-size: 1.7rem;
 		margin-bottom: 0.5rem;
 	}
+
 	span {
 		font-weight: 500;
 		font-size: 1.2rem;
@@ -118,6 +123,7 @@ export const JourneyData = styled.div`
 			font-size: 1.1rem;
 		}
 	}
+
 	@media screen and (max-width: 26em) {
 		h5 {
 			font-size: 1.3rem;
@@ -127,6 +133,7 @@ export const JourneyData = styled.div`
 			font-size: 0.9rem;
 		}
 	}
+
 	@media screen and (max-width: 25em) {
 		h5 {
 			font-size: 1.2rem;
@@ -136,6 +143,7 @@ export const JourneyData = styled.div`
 			font-size: 0.8rem;
 		}
 	}
+
 	@media screen and (max-width: 18em) {
 		column-gap: 1rem;
 
@@ -160,16 +168,19 @@ export const JourneyCalendar = styled.div`
 		font-size: 1rem;
 		color: ${colors.lighter};
 	}
+
 	@media screen and (max-width: 26em) {
 		span {
 			font-size: 0.8rem;
 		}
 	}
+
 	@media screen and (max-width: 24em) {
 		span {
 			font-size: 0.75rem;
 		}
 	}
+
 	@media screen and (max-width: 18em) {
 		gap: 0.1rem;
 

@@ -1,4 +1,5 @@
 import { SectionHeading } from '../main/main.styles';
+
 import {
 	PortfolioSection,
 	PortoflioText,

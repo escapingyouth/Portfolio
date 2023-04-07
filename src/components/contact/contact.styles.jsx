@@ -28,6 +28,7 @@ export const ContactSection = styled.section`
 		font-size: 1.2rem;
 		border-radius: 0px;
 	}
+
 	@media only screen and (max-width: 18em) {
 		a {
 			font-size: 0.9rem;
@@ -37,10 +38,12 @@ export const ContactSection = styled.section`
 
 export const ContactText = styled.div`
 	margin-bottom: 2rem;
+
 	h3 {
 		font-size: 2.5rem;
 		margin-bottom: 2rem;
 	}
+
 	p {
 		span {
 			color: ${colors.primary};
@@ -49,11 +52,13 @@ export const ContactText = styled.div`
 			margin-bottom: 0.5rem;
 		}
 	}
+
 	@media only screen and (max-width: 26em) {
 		p {
 			font-size: 0.8rem;
 		}
 	}
+
 	@media only screen and (max-width: 18em) {
 		h3 {
 			font-size: 1.9rem;

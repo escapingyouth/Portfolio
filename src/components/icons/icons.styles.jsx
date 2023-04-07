@@ -1,11 +1,9 @@
 import styled from 'styled-components';
-
 import { colors } from '../../utils/_variables';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { ReactComponent as Cpp } from '../../assets/cpp.svg';
 import { ReactComponent as StyledComponents } from '../../assets/styled-components.svg';
-
 import { ReactComponent as Education } from '../../assets/education.svg';
 import { ReactComponent as Work } from '../../assets/work.svg';
 
@@ -193,6 +191,7 @@ export const WorkIcon = styled(Work)`
 		width: 3rem;
 		height: 3rem;
 	}
+
 	@media screen and (max-width: 18em) {
 		width: 2rem;
 		height: 2rem;

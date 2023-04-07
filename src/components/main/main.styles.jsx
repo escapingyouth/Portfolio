@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-
 import { colors, margins } from '../../utils/_variables';
 
 export const MainContainer = styled.main`
@@ -8,6 +7,7 @@ export const MainContainer = styled.main`
 	@media screen and (max-width: 64em) {
 		margin: 10rem 6rem;
 	}
+
 	@media screen and (max-width: 50em) {
 		${({ isNavOpen }) => isNavOpen && MainContainerActive};
 	}
@@ -34,6 +34,7 @@ const MainContainerActive = css`
 
 export const SectionHeading = styled.div`
 	margin-bottom: ${margins.marginMedium};
+
 	h4 {
 		font-size: 1.5rem;
 		color: ${colors.light};
@@ -69,6 +70,7 @@ export const SectionHeading = styled.div`
 			}
 		}
 	}
+
 	@media screen and (max-width: 34em) {
 		h4 {
 			&::after {
@@ -76,6 +78,7 @@ export const SectionHeading = styled.div`
 			}
 		}
 	}
+
 	@media screen and (max-width: 26em) {
 		h4 {
 			&,
@@ -88,6 +91,7 @@ export const SectionHeading = styled.div`
 			}
 		}
 	}
+
 	@media screen and (max-width: 25em) {
 		h4 {
 			&,
@@ -100,6 +104,7 @@ export const SectionHeading = styled.div`
 			}
 		}
 	}
+
 	@media screen and (max-width: 18em) {
 		h4 {
 			&::after {

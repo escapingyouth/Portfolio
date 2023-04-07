@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { margins, colors } from '../../utils/_variables';
+
 import { GithubIcon } from '../icons/icons.styles';
 
 export const PortfolioSection = styled.section`
@@ -30,6 +31,7 @@ export const PortfolioContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	gap: 4rem;
+	overflow-x: hidden !important;
 
 	@media screen and (max-width: 34em) {
 		h2 {
