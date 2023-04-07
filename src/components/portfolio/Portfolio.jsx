@@ -56,7 +56,12 @@ const Portfolio = () => {
 				<p>Here's a curated list of what I've built</p>
 			</PortoflioText>
 			<PortfolioContainer>
-				<ProjectContainer>
+				<ProjectContainer
+					data-aos='fade-right'
+					data-aos-delay='50'
+					data-aos-easing='linear'
+					data-aos-duration='500'
+				>
 					<ProjectImageContainer>
 						<img src={ecommerceImage} alt='e-commerce app' />
 					</ProjectImageContainer>
@@ -115,7 +120,12 @@ const Portfolio = () => {
 						</ProjectDescription>
 					</ProjectDetailsContainer>
 				</ProjectContainer>
-				<ProjectContainer>
+				<ProjectContainer
+					data-aos='fade-left'
+					data-aos-delay='100'
+					data-aos-easing='linear'
+					data-aos-duration='500'
+				>
 					<ProjectImageContainer>
 						<img src={weatherAppImage} alt='weather-app' />
 					</ProjectImageContainer>
@@ -162,7 +172,12 @@ const Portfolio = () => {
 						</ProjectDescription>
 					</ProjectDetailsContainer>
 				</ProjectContainer>
-				<ProjectContainer>
+				<ProjectContainer
+					data-aos='fade-right'
+					data-aos-delay='200'
+					data-aos-easing='linear'
+					data-aos-duration='500'
+				>
 					<ProjectImageContainer>
 						<img src={movieAppImage} alt='movie-app' />
 					</ProjectImageContainer>
@@ -211,7 +226,7 @@ const Portfolio = () => {
 				</ProjectContainer>
 				<h2>Other Noteworthy Projects</h2>
 				<ProjectCardContainer>
-					<ProjectCard>
+					<ProjectCard data-aos='fade-right' data-aos-duration='1000'>
 						<ProjectHeader>
 							<FolderIcon></FolderIcon>
 							<ProjectLinkContainer>
@@ -255,7 +270,7 @@ const Portfolio = () => {
 							</JSIconContainer>
 						</ProjectIconsContainer>
 					</ProjectCard>
-					<ProjectCard>
+					<ProjectCard data-aos='fade-left' data-aos-duration='1000'>
 						<ProjectHeader>
 							<FolderIcon></FolderIcon>
 							<ProjectLinkContainer>
@@ -298,7 +313,7 @@ const Portfolio = () => {
 							</JSIconContainer>
 						</ProjectIconsContainer>
 					</ProjectCard>
-					<ProjectCard>
+					<ProjectCard data-aos='fade-right' data-aos-duration='1000'>
 						<ProjectHeader>
 							<FolderIcon></FolderIcon>
 							<ProjectLinkContainer>
@@ -342,7 +357,7 @@ const Portfolio = () => {
 							</JSIconContainer>
 						</ProjectIconsContainer>
 					</ProjectCard>
-					<ProjectCard>
+					<ProjectCard data-aos='fade-left' data-aos-duration='1000'>
 						<ProjectHeader>
 							<FolderIcon></FolderIcon>
 							<ProjectLinkContainer>

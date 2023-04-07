@@ -15,7 +15,7 @@ const About = () => {
 			<SectionHeading>
 				<h4>About Me</h4>
 			</SectionHeading>
-			<AboutContainer>
+			<AboutContainer data-aos='fade-up' data-aos-easing='linear'>
 				<AboutText>
 					<p>
 						Hey there! I'm Michael, a <span>web developer</span> with a passion

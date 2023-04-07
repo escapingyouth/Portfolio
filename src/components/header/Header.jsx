@@ -12,7 +12,7 @@ const Header = () => {
 			<TextContainer>
 				<h1>Hi, my name is</h1>
 				<h2>Michael Appiah.</h2>
-				<h3>I code your dreams into reality.</h3>
+				<h3> I code your dreams into reality.</h3>
 				<p>
 					I'm a <span>web developer</span> who crafts <span>user-friendly</span>{' '}
 					websites with a touch of <span>wow-factor</span>. My coding skills are

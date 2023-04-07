@@ -11,7 +11,11 @@ import { CalendarIcon } from '../../icons/icons.styles';
 const Work = () => {
 	return (
 		<JourneyDataContainer>
-			<JourneyData>
+			<JourneyData
+				data-aos='fade-up'
+				data-aos-easing='linear'
+				data-aos-duration='300'
+			>
 				<div>
 					<h5>Web Developer</h5>
 					<span>@Envision Digital</span>
@@ -25,7 +29,11 @@ const Work = () => {
 					<JourneyLine></JourneyLine>
 				</JourneyDivider>
 			</JourneyData>
-			<JourneyData>
+			<JourneyData
+				data-aos='fade-up'
+				data-aos-easing='linear'
+				data-aos-duration='300'
+			>
 				<div></div>
 				<JourneyDivider>
 					<JourneyRounder></JourneyRounder>

@@ -51,14 +51,19 @@ import {
 
 const Skills = () => {
 	return (
-		<SkillsSection id='section-skills'>
+		<SkillsSection>
 			<SectionHeading>
 				<h4>My Skills</h4>
 			</SectionHeading>
 			<SkillsText>
 				<p>Here are the technologies and tools I'm proficient in</p>
 			</SkillsText>
-			<SkillsWrapper>
+			<SkillsWrapper
+				id='section-skills'
+				data-aos='zoom-in'
+				data-aos-easing='linear'
+				data-aos-duration='500'
+			>
 				<SkillsContainer>
 					<HTMLIconContainer>
 						<HTMLIcon />
