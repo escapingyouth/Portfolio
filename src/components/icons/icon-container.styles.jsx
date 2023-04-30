@@ -23,7 +23,7 @@ export const EmailLink = () => {
 	return (
 		<Button
 			buttonType={ButtonTypeClasses.inverted}
-			href='mailto:@michael.k.a.amankwah@gmail.com'
+			href='mailto:@mke.appiah@gmail.com'
 			target='_blank'
 			rel='noopener noreferrer'
 		>
