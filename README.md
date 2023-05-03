@@ -22,3 +22,25 @@
 | <img src="https://user-images.githubusercontent.com/79151294/235938255-c2695e87-7722-429e-93fb-58f1913fa34d.png" > | <img src="https://user-images.githubusercontent.com/79151294/235938504-771bccd6-7d9f-45a8-9855-e703283a5ef6.png" >|
 | ------ | ----------- |
 | <img src="https://user-images.githubusercontent.com/79151294/235938764-ef102126-b96a-4d66-a52a-7a849c68ec9c.png"> | <img src="https://user-images.githubusercontent.com/79151294/235939071-40905601-4e48-4a88-9f4a-d47ec4be029a.png" >|
+
+
+<br>
+<br>
+
+# Viewing the project 🔍
+
+
+## Cloning 🧑‍🤝‍🧑
+
+``` shell
+$ cd ~/workspace
+$ git clone https://github.com/escapingyouth/Portfolio.git
+$ cd Portfolio
+```
+
+## Running the project 🏃‍♀️💨
+``` shell
+$ npm run start
+```
+Open http://localhost:3000 to view it in your browser.
+
