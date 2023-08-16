@@ -43,7 +43,7 @@ const Navigation = () => {
 
 					<Button
 						buttonType={ButtonTypeClasses.base}
-						href={`${process.env.PUBLIC_URL}/resume.pdf`}
+						href={`${process.env.PUBLIC_URL}/Michael Kwame Appiah - CV.pdf`}
 						target='_blank'
 						rel='noopener noreferrer'
 						download
