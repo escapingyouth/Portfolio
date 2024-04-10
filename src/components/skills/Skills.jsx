@@ -23,7 +23,7 @@ import {
 	PhotoshopIconContainer,
 	IllustratorIconContainer,
 	FigmaIconContainer,
-	WordIconContainer,
+	TailwindIconContainer,
 	ExcelIconContainer,
 	PowerpointIconContainer
 } from '../icons/icon-container.styles';
@@ -44,7 +44,7 @@ import {
 	PhotoshopIcon,
 	IllustratorIcon,
 	FigmaIcon,
-	WordIcon,
+	TailwindIcon,
 	ExcelIcon,
 	PowerpointIcon
 } from '../icons/icons.styles';
@@ -125,10 +125,10 @@ const Skills = () => {
 						<FigmaIcon />
 						<span>Figma</span>
 					</FigmaIconContainer>
-					<WordIconContainer>
-						<WordIcon />
-						<span>Ms Word</span>
-					</WordIconContainer>
+					<TailwindIconContainer>
+						<TailwindIcon />
+						<span>Tailwindcss</span>
+					</TailwindIconContainer>
 					<ExcelIconContainer>
 						<ExcelIcon />
 						<span>Ms Excel</span>

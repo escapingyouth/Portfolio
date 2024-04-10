@@ -20,6 +20,8 @@ import {
 	HTMLIconContainer,
 	JSIconContainer,
 	CSSIconContainer,
+	TSIconContainer,
+	TailwindIconContainer,
 	ReactIconContainer,
 	SassIconContainer,
 	FirebaseIconContainer,
@@ -32,7 +34,9 @@ import {
 import {
 	HTMLIcon,
 	CSSIcon,
+	TailwindIcon,
 	JSIcon,
+	TSIcon,
 	GithubIcon,
 	LinkIcon,
 	ReactIcon,
@@ -45,6 +49,8 @@ import {
 
 import ecommerceImage from '../../assets/ecommerce-app.png';
 import weatherAppImage from '../../assets/weather-app.png';
+import envisionDigitalImage from '../../assets/envision-digital.png';
+import tgiImage from '../../assets/tgi.png';
 import movieAppImage from '../../assets/movie-app.png';
 
 const Portfolio = () => {
@@ -128,21 +134,14 @@ const Portfolio = () => {
 					data-aos-duration='500'
 				>
 					<ProjectImageContainer>
-						<img src={weatherAppImage} alt='weather-app' />
+						<img src={tgiImage} alt='tgi' />
 					</ProjectImageContainer>
 					<ProjectDetailsContainer>
 						<ProjectHeader>
-							<h3>Weather App</h3>
+							<h3>TGI Landing Page</h3>
 							<ProjectLinkContainer>
-								<GithubLinkContainer
-									href='https://github.com/escapingyouth/weatherApp'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<GithubIcon></GithubIcon>
-								</GithubLinkContainer>
 								<LinkIconContainer
-									href='https://weatherapp-michaelka.netlify.app/'
+									href='https://github.com/escapingyouth/TGI'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
@@ -151,40 +150,125 @@ const Portfolio = () => {
 							</ProjectLinkContainer>
 						</ProjectHeader>
 						<ProjectIconsContainer>
-							<HTMLIconContainer>
-								<HTMLIcon />
-								<span>HTML</span>
-							</HTMLIconContainer>
-							<CSSIconContainer>
-								<CSSIcon />
-								<span>CSS</span>
-							</CSSIconContainer>
-							<JSIconContainer>
-								<JSIcon />
-								<span>JavaScript</span>
-							</JSIconContainer>
+							<TSIconContainer>
+								<TSIcon />
+								<span>TypeScript</span>
+							</TSIconContainer>
+							<ReactIconContainer>
+								<ReactIcon />
+								<span>React</span>
+							</ReactIconContainer>
+							<FigmaIconContainer>
+								<FigmaIcon />
+								<span>Figma</span>
+							</FigmaIconContainer>
+							<TailwindIconContainer>
+								<TailwindIcon />
+								<span>Tailwindcss</span>
+							</TailwindIconContainer>
 						</ProjectIconsContainer>
 						<ProjectDescription>
+							<p>Development version of the landing page of TGI</p>
+						</ProjectDescription>
+					</ProjectDetailsContainer>
+				</ProjectContainer>
+				<ProjectContainer
+					data-aos='fade-left'
+					data-aos-delay='100'
+					data-aos-easing='linear'
+					data-aos-duration='500'
+				>
+					<ProjectImageContainer>
+						<img src={envisionDigitalImage} alt='envision digital' />
+					</ProjectImageContainer>
+					<ProjectDetailsContainer>
+						<ProjectHeader>
+							<h3>Envision Digital Landing Page</h3>
+							<ProjectLinkContainer>
+								<LinkIconContainer
+									href='https://github.com/escapingyouth/envision-digital'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<LinkIcon></LinkIcon>
+								</LinkIconContainer>
+							</ProjectLinkContainer>
+						</ProjectHeader>
+						<ProjectIconsContainer>
+							<TSIconContainer>
+								<TSIcon />
+								<span>TypeScript</span>
+							</TSIconContainer>
+							<ReactIconContainer>
+								<ReactIcon />
+								<span>React</span>
+							</ReactIconContainer>
+							<FigmaIconContainer>
+								<FigmaIcon />
+								<span>Figma</span>
+							</FigmaIconContainer>
+							<TailwindIconContainer>
+								<TailwindIcon />
+								<span>Tailwindcss</span>
+							</TailwindIconContainer>
+						</ProjectIconsContainer>
+						<ProjectDescription>
+							<p>Development version of the landing page of Envision Digital</p>
+						</ProjectDescription>
+					</ProjectDetailsContainer>
+				</ProjectContainer>
+				<h2>Other Noteworthy Projects</h2>
+				<ProjectCardContainer>
+					<ProjectCard data-aos='fade-right' data-aos-duration='1000'>
+						<ProjectHeader>
+							<FolderIcon></FolderIcon>
+							<ProjectLinkContainer>
+								<GithubLinkContainer
+									href='https://github.com/escapingyouth/climaCheck'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<GithubIcon></GithubIcon>
+								</GithubLinkContainer>
+								<LinkIconContainer
+									href='https://clima-check.vercel.app/'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<LinkIcon></LinkIcon>
+								</LinkIconContainer>
+							</ProjectLinkContainer>
+						</ProjectHeader>
+						<ProjectCardText>
+							<h3>ClimaCheck</h3>
 							<p>
 								A weather app that uses the OpenWeather API to provide users
 								with up-to-date weather information based on their current
 								location.
 							</p>
-						</ProjectDescription>
-					</ProjectDetailsContainer>
-				</ProjectContainer>
-				<ProjectContainer
-					data-aos='fade-right'
-					data-aos-delay='200'
-					data-aos-easing='linear'
-					data-aos-duration='500'
-				>
-					<ProjectImageContainer>
-						<img src={movieAppImage} alt='movie-app' />
-					</ProjectImageContainer>
-					<ProjectDetailsContainer>
+						</ProjectCardText>
+						<ProjectIconsContainer>
+							<JSIconContainer>
+								<JSIcon />
+								<span>JavaScript</span>
+							</JSIconContainer>
+							<ReactIconContainer>
+								<ReactIcon />
+								<span>React</span>
+							</ReactIconContainer>
+							<FigmaIconContainer>
+								<FigmaIcon />
+								<span>Figma</span>
+							</FigmaIconContainer>
+							<TailwindIconContainer>
+								<TailwindIcon />
+								<span>Tailwindcss</span>
+							</TailwindIconContainer>
+						</ProjectIconsContainer>
+					</ProjectCard>
+					<ProjectCard data-aos='fade-left' data-aos-duration='1000'>
 						<ProjectHeader>
-							<h3>Movies Galore</h3>
+							<FolderIcon></FolderIcon>
 							<ProjectLinkContainer>
 								<GithubLinkContainer
 									href='https://github.com/escapingyouth/movieApp/'
@@ -202,102 +286,13 @@ const Portfolio = () => {
 								</LinkIconContainer>
 							</ProjectLinkContainer>
 						</ProjectHeader>
-						<ProjectIconsContainer>
-							<HTMLIconContainer>
-								<HTMLIcon />
-								<span>HTML</span>
-							</HTMLIconContainer>
-							<CSSIconContainer>
-								<CSSIcon />
-								<span>CSS</span>
-							</CSSIconContainer>
-							<JSIconContainer>
-								<JSIcon />
-								<span>JavaScript</span>
-							</JSIconContainer>
-						</ProjectIconsContainer>
-						<ProjectDescription>
+						<ProjectCardText>
+							<h3>Movies Galore</h3>
 							<p>
 								A movie app that leverages the TMDB API to provide users with an
 								extensive database of movies, allowing them to browse and search
 								for their favorite titles
 							</p>
-						</ProjectDescription>
-					</ProjectDetailsContainer>
-				</ProjectContainer>
-				<h2>Other Noteworthy Projects</h2>
-				<ProjectCardContainer>
-					<ProjectCard data-aos='fade-right' data-aos-duration='1000'>
-						<ProjectHeader>
-							<FolderIcon></FolderIcon>
-							<ProjectLinkContainer>
-								<GithubLinkContainer
-									href='https://github.com/escapingyouth/netflix-clone'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<GithubIcon></GithubIcon>
-								</GithubLinkContainer>
-								<LinkIconContainer
-									href='https://netflix-gh.netlify.app/'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<LinkIcon></LinkIcon>
-								</LinkIconContainer>
-							</ProjectLinkContainer>
-						</ProjectHeader>
-						<ProjectCardText>
-							<h3>Netflix UI Clone</h3>
-							<p>
-								A clone of the user interface (UI) of the popular streaming
-								platform, Netflix. The UI was built using HTML,CSS and
-								JavaScript with the aim of reproducing the familiar look and
-								feel of the original platform.
-							</p>
-						</ProjectCardText>
-						<ProjectIconsContainer>
-							<HTMLIconContainer>
-								<HTMLIcon />
-								<span>HTML</span>
-							</HTMLIconContainer>
-							<CSSIconContainer>
-								<CSSIcon />
-								<span>CSS</span>
-							</CSSIconContainer>
-							<JSIconContainer>
-								<JSIcon />
-								<span>JavaScript</span>
-							</JSIconContainer>
-						</ProjectIconsContainer>
-					</ProjectCard>
-					<ProjectCard data-aos='fade-left' data-aos-duration='1000'>
-						<ProjectHeader>
-							<FolderIcon></FolderIcon>
-							<ProjectLinkContainer>
-								<GithubLinkContainer
-									href='https://github.com/escapingyouth/microsoft-clone'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<GithubIcon></GithubIcon>
-								</GithubLinkContainer>
-								<LinkIconContainer
-									href='https://microsoft-ui-clone.netlify.app/'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<LinkIcon></LinkIcon>
-								</LinkIconContainer>
-							</ProjectLinkContainer>
-						</ProjectHeader>
-						<ProjectCardText>
-							<h3>Microsoft UI Clone</h3>
-							<p>
-								A clone of the UI of the Microsoft homepage. I worked on this to
-								improve my knowledge of flexbox and grid layout. I also worked
-								on this to learn how to implement slider components in websites
-							</p>
 						</ProjectCardText>
 						<ProjectIconsContainer>
 							<HTMLIconContainer>
@@ -318,13 +313,6 @@ const Portfolio = () => {
 						<ProjectHeader>
 							<FolderIcon></FolderIcon>
 							<ProjectLinkContainer>
-								<GithubLinkContainer
-									href='https://github.com/escapingyouth/disneyPlus-clone'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<GithubIcon></GithubIcon>
-								</GithubLinkContainer>
 								<LinkIconContainer
 									href='https://disneyplus-homepage-clone.netlify.app/'
 									target='_blank'
@@ -362,13 +350,6 @@ const Portfolio = () => {
 						<ProjectHeader>
 							<FolderIcon></FolderIcon>
 							<ProjectLinkContainer>
-								<GithubLinkContainer
-									href='https://github.com/escapingyouth/apple-clone'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<GithubIcon></GithubIcon>
-								</GithubLinkContainer>
 								<LinkIconContainer
 									href='https://apple-homepage-ui-clone.netlify.app/'
 									target='_blank'

@@ -70,6 +70,17 @@ export const CSSIconContainer = styled.div`
 		background-color: rgba(3, 155, 229, 0.12);
 	}
 `;
+export const TailwindIconContainer = styled.div`
+	background-color: rgba(3, 155, 229, 0.16);
+	color: #38bdf8;
+	border: 1px solid rgba(3, 155, 229, 0.16);
+	cursor: pointer;
+	transition: all 0.2s;
+
+	&:hover {
+		background-color: rgba(3, 155, 229, 0.12);
+	}
+`;
 
 export const JSIconContainer = styled.div`
 	background-color: rgba(250, 240, 137, 0.16);

@@ -233,14 +233,9 @@ export const ProjectCard = styled.article`
 	background-color: ${colors.secondary};
 	box-shadow: 0 10px 30px -15px rgba(3, 11, 26, 0.7);
 	transition: all 0.2s;
-	cursor: pointer;
 
 	&:hover {
 		transform: translateY(-10px);
-
-		h3 {
-			color: ${colors.primary};
-		}
 	}
 
 	${ProjectIconsContainer} {

@@ -18,11 +18,11 @@ const Work = () => {
 				data-aos-duration='300'
 			>
 				<div>
-					<h5>Web Developer</h5>
-					<span>@Envision Digital</span>
+					<h5>Product Development Intern</h5>
+					<span>@Spurt!</span>
 					<JourneyCalendar>
 						<CalendarIcon />
-						<span>2021 - Present </span>
+						<span>Sep'23 - Nov'23 </span>
 					</JourneyCalendar>
 				</div>
 				<JourneyDivider>
@@ -40,11 +40,11 @@ const Work = () => {
 					<JourneyRounder></JourneyRounder>
 				</JourneyDivider>
 				<div>
-					<h5>SWE Intern</h5>
-					<span>@Omni Strategies Ghana</span>
+					<h5>Web Developer</h5>
+					<span>@Envision Digital</span>
 					<JourneyCalendar>
 						<CalendarIcon />
-						<span>Mar - Aug 2020 </span>
+						<span>Aug'21 - Dec'22 </span>
 					</JourneyCalendar>
 				</div>
 			</JourneyData>

@@ -38,7 +38,7 @@ import {
 	SiMicrosoftpowerpoint
 } from 'react-icons/si';
 
-import { BiCalendar, BiLinkExternal } from 'react-icons/bi';
+import { BiCalendar, BiLinkExternal, BiLogoTailwindCss } from 'react-icons/bi';
 
 export const LogoIcon = styled(Logo)`
 	cursor: pointer;
@@ -83,6 +83,10 @@ export const JSIcon = styled(DiJavascript1)`
 
 export const CSSIcon = styled(DiCss3)`
 	color: #039be5;
+	font-size: 1.4rem;
+`;
+export const TailwindIcon = styled(BiLogoTailwindCss)`
+	color: #38bdf8;
 	font-size: 1.4rem;
 `;
 
