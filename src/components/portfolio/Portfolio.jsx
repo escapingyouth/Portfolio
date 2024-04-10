@@ -141,7 +141,7 @@ const Portfolio = () => {
 							<h3>TGI Landing Page</h3>
 							<ProjectLinkContainer>
 								<LinkIconContainer
-									href='https://github.com/escapingyouth/TGI'
+									href='https://tgi-gamma.vercel.app/'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
@@ -186,7 +186,7 @@ const Portfolio = () => {
 							<h3>Envision Digital Landing Page</h3>
 							<ProjectLinkContainer>
 								<LinkIconContainer
-									href='https://github.com/escapingyouth/envision-digital'
+									href='https://envision-digital.vercel.app/'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
